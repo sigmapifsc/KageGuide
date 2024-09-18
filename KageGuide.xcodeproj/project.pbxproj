@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		771226FA2C79ECF700456452 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771226F92C79ECF700456452 /* ContactView.swift */; };
+		771C51FB2C7E750A006B7D23 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771C51FA2C7E750A006B7D23 /* Constants.swift */; };
+		771C51FD2C7E7C2E006B7D23 /* SyllabusSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771C51FC2C7E7C2E006B7D23 /* SyllabusSummaryView.swift */; };
+		771C51FF2C7F6FB2006B7D23 /* CoursesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771C51FE2C7F6FB2006B7D23 /* CoursesViewModel.swift */; };
+		771C52012C7F734B006B7D23 /* EditAssignmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771C52002C7F734B006B7D23 /* EditAssignmentView.swift */; };
+		7728236E2C92365B0071114D /* FeedbackPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7728236D2C92365B0071114D /* FeedbackPage.swift */; };
+		772823722C9466D30071114D /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772823712C9466D30071114D /* DateHelper.swift */; };
+		77353BDB2C8D271F0004FD1B /* BackUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77353BDA2C8D271F0004FD1B /* BackUpView.swift */; };
+		77353BDD2C8D3A1A0004FD1B /* BackupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77353BDC2C8D3A1A0004FD1B /* BackupManager.swift */; };
+		77353BE02C8D402D0004FD1B /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 77353BDF2C8D402D0004FD1B /* ZIPFoundation */; };
+		773FDD4E2C7CE2EA00A10386 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773FDD4D2C7CE2EA00A10386 /* OpenAIService.swift */; };
+		775B2BA62C82AC0F00D3C0A1 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775B2BA52C82AC0F00D3C0A1 /* AppSettings.swift */; };
+		775B2BA82C82AC9500D3C0A1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775B2BA72C82AC9500D3C0A1 /* SettingsView.swift */; };
+		7779B3FA2C78F84000DD6371 /* ADHDCoachApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7779B3F92C78F84000DD6371 /* ADHDCoachApp.swift */; };
+		7779B3FC2C78F84000DD6371 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7779B3FB2C78F84000DD6371 /* ContentView.swift */; };
+		7779B3FE2C78F84100DD6371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7779B3FD2C78F84100DD6371 /* Assets.xcassets */; };
+		7779B4012C78F84100DD6371 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7779B4002C78F84100DD6371 /* Preview Assets.xcassets */; };
+		7779B4082C78FB8B00DD6371 /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7779B4072C78FB8B00DD6371 /* CoursesView.swift */; };
+		7779B40A2C78FBD900DD6371 /* CourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7779B4092C78FBD900DD6371 /* CourseDetailView.swift */; };
+		7779B40C2C78FBF700DD6371 /* AssignmentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7779B40B2C78FBF700DD6371 /* AssignmentDetailView.swift */; };
+		7779B40E2C78FC1600DD6371 /* CalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7779B40D2C78FC1600DD6371 /* CalendarManager.swift */; };
+		7779B4122C78FE5100DD6371 /* AddCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7779B4112C78FE5100DD6371 /* AddCourseView.swift */; };
+		7779B4142C78FF4A00DD6371 /* AddAssignmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7779B4132C78FF4A00DD6371 /* AddAssignmentView.swift */; };
+		7779B4162C7900AF00DD6371 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7779B4152C7900AF00DD6371 /* PersistenceManager.swift */; };
+		7779B4182C79021400DD6371 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7779B4172C79021400DD6371 /* Models.swift */; };
+		7779B41A2C7903A800DD6371 /* MasterSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7779B4192C7903A800DD6371 /* MasterSummaryView.swift */; };
+		7779B41C2C7905C300DD6371 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7779B41B2C7905C300DD6371 /* WelcomeView.swift */; };
+		7779B4282C79097200DD6371 /* CourseArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7779B4272C79097200DD6371 /* CourseArchiveView.swift */; };
+		77AD60222C7920270082F758 /* ImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AD60212C7920270082F758 /* ImportView.swift */; };
+		77AD60242C7920780082F758 /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AD60232C7920780082F758 /* DocumentPicker.swift */; };
+		77AD60282C7937280082F758 /* FileManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AD60272C7937280082F758 /* FileManagerHelper.swift */; };
+		77AD602A2C7937B20082F758 /* PDFViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AD60292C7937B20082F758 /* PDFViewer.swift */; };
+		77BA41612C8E5BF200EFA717 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BA41602C8E5BF200EFA717 /* ShareSheet.swift */; };
+		77C60CDE2C8B9A1800B9FD58 /* CrisisPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C60CDD2C8B9A1800B9FD58 /* CrisisPlanView.swift */; };
+		77C60CE02C8B9D9100B9FD58 /* CrisisLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C60CDF2C8B9D9100B9FD58 /* CrisisLogic.swift */; };
+		77C60CE22C8C8E0900B9FD58 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C60CE12C8C8E0900B9FD58 /* MoreView.swift */; };
+		77C60CE42C8C948300B9FD58 /* PlanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C60CE32C8C948300B9FD58 /* PlanDetailView.swift */; };
+		77C60CE62C8CA17200B9FD58 /* PlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C60CE52C8CA17200B9FD58 /* PlanView.swift */; };
+		77C60CE82C8CF85900B9FD58 /* ResourcesView.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C60CE72C8CF85900B9FD58 /* ResourcesView.swift.swift */; };
+		77EC16F62C8A27EC008E2C57 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EC16F52C8A27EC008E2C57 /* DashboardView.swift */; };
+		77EE0E2B2C8516350019A50D /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EE0E2A2C8516350019A50D /* AboutView.swift */; };
+		77EE0E332C8895840019A50D /* Prompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EE0E322C8895840019A50D /* Prompts.swift */; };
+		77F8418B2C9648A4005F94FB /* ShadowNudgeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F8418A2C9648A4005F94FB /* ShadowNudgeManager.swift */; };
+		77F8418D2C9648CF005F94FB /* ShadowNudgeAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F8418C2C9648CF005F94FB /* ShadowNudgeAssignment.swift */; };
+		77FDA33E2C8F7477004AA1D9 /* PlanArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FDA33D2C8F7477004AA1D9 /* PlanArchiveView.swift */; };
+		77FDA3422C8F7FB2004AA1D9 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77FDA3412C8F7FB2004AA1D9 /* Launch Screen.storyboard */; };
+		77FDA3442C8F81D0004AA1D9 /* Title2KageShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 77FDA3432C8F81D0004AA1D9 /* Title2KageShadow.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		771226F92C79ECF700456452 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		771C51FA2C7E750A006B7D23 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		771C51FC2C7E7C2E006B7D23 /* SyllabusSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyllabusSummaryView.swift; sourceTree = "<group>"; };
+		771C51FE2C7F6FB2006B7D23 /* CoursesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewModel.swift; sourceTree = "<group>"; };
+		771C52002C7F734B006B7D23 /* EditAssignmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAssignmentView.swift; sourceTree = "<group>"; };
+		7728236D2C92365B0071114D /* FeedbackPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackPage.swift; sourceTree = "<group>"; };
+		772823712C9466D30071114D /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		77353BD92C8D0F0B0004FD1B /* KageGuide-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "KageGuide-Info.plist"; sourceTree = "<group>"; };
+		77353BDA2C8D271F0004FD1B /* BackUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackUpView.swift; sourceTree = "<group>"; };
+		77353BDC2C8D3A1A0004FD1B /* BackupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupManager.swift; sourceTree = "<group>"; };
+		773FDD4D2C7CE2EA00A10386 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		775B2BA52C82AC0F00D3C0A1 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		775B2BA72C82AC9500D3C0A1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7779B3F62C78F84000DD6371 /* KageGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KageGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7779B3F92C78F84000DD6371 /* ADHDCoachApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADHDCoachApp.swift; sourceTree = "<group>"; };
+		7779B3FB2C78F84000DD6371 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7779B3FD2C78F84100DD6371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7779B4002C78F84100DD6371 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7779B4072C78FB8B00DD6371 /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
+		7779B4092C78FBD900DD6371 /* CourseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailView.swift; sourceTree = "<group>"; };
+		7779B40B2C78FBF700DD6371 /* AssignmentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentDetailView.swift; sourceTree = "<group>"; };
+		7779B40D2C78FC1600DD6371 /* CalendarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarManager.swift; sourceTree = "<group>"; };
+		7779B4112C78FE5100DD6371 /* AddCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseView.swift; sourceTree = "<group>"; };
+		7779B4132C78FF4A00DD6371 /* AddAssignmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAssignmentView.swift; sourceTree = "<group>"; };
+		7779B4152C7900AF00DD6371 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		7779B4172C79021400DD6371 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		7779B4192C7903A800DD6371 /* MasterSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterSummaryView.swift; sourceTree = "<group>"; };
+		7779B41B2C7905C300DD6371 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		7779B4272C79097200DD6371 /* CourseArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseArchiveView.swift; sourceTree = "<group>"; };
+		77AD60212C7920270082F758 /* ImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportView.swift; sourceTree = "<group>"; };
+		77AD60232C7920780082F758 /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
+		77AD60272C7937280082F758 /* FileManagerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerHelper.swift; sourceTree = "<group>"; };
+		77AD60292C7937B20082F758 /* PDFViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewer.swift; sourceTree = "<group>"; };
+		77BA41602C8E5BF200EFA717 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		77C60CDD2C8B9A1800B9FD58 /* CrisisPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrisisPlanView.swift; sourceTree = "<group>"; };
+		77C60CDF2C8B9D9100B9FD58 /* CrisisLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrisisLogic.swift; sourceTree = "<group>"; };
+		77C60CE12C8C8E0900B9FD58 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		77C60CE32C8C948300B9FD58 /* PlanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailView.swift; sourceTree = "<group>"; };
+		77C60CE52C8CA17200B9FD58 /* PlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanView.swift; sourceTree = "<group>"; };
+		77C60CE72C8CF85900B9FD58 /* ResourcesView.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift.swift; sourceTree = "<group>"; };
+		77EC16F52C8A27EC008E2C57 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		77EE0E2A2C8516350019A50D /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		77EE0E322C8895840019A50D /* Prompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompts.swift; sourceTree = "<group>"; };
+		77F8418A2C9648A4005F94FB /* ShadowNudgeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowNudgeManager.swift; sourceTree = "<group>"; };
+		77F8418C2C9648CF005F94FB /* ShadowNudgeAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowNudgeAssignment.swift; sourceTree = "<group>"; };
+		77FDA33D2C8F7477004AA1D9 /* PlanArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanArchiveView.swift; sourceTree = "<group>"; };
+		77FDA3412C8F7FB2004AA1D9 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../../../../.Trash/KageGuide/ADHDCoach/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		77FDA3432C8F81D0004AA1D9 /* Title2KageShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Title2KageShadow.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7779B3F32C78F84000DD6371 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77353BE02C8D402D0004FD1B /* ZIPFoundation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7779B3ED2C78F83F00DD6371 = {
+			isa = PBXGroup;
+			children = (
+				77FDA3412C8F7FB2004AA1D9 /* Launch Screen.storyboard */,
+				77FDA3432C8F81D0004AA1D9 /* Title2KageShadow.png */,
+				77353BD92C8D0F0B0004FD1B /* KageGuide-Info.plist */,
+				7779B3F82C78F84000DD6371 /* ADHDCoach */,
+				7779B3F72C78F84000DD6371 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7779B3F72C78F84000DD6371 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7779B3F62C78F84000DD6371 /* KageGuide.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7779B3F82C78F84000DD6371 /* ADHDCoach */ = {
+			isa = PBXGroup;
+			children = (
+				77EE0E2A2C8516350019A50D /* AboutView.swift */,
+				7779B3FD2C78F84100DD6371 /* Assets.xcassets */,
+				77F7C27F2C909E07002642BE /* Assignments */,
+				77F7C2822C909EF0002642BE /* Back Up */,
+				77F7C27E2C909DFF002642BE /* Courses */,
+				77EC16F52C8A27EC008E2C57 /* DashboardView.swift */,
+				77F7C2802C909E40002642BE /* Global files */,
+				77AD60212C7920270082F758 /* ImportView.swift */,
+				77F7C2832C909F19002642BE /* Panic */,
+				7779B3FF2C78F84100DD6371 /* Preview Content */,
+				77F7C2812C909E87002642BE /* Syllabus */,
+				7779B41B2C7905C300DD6371 /* WelcomeView.swift */,
+				77F8418A2C9648A4005F94FB /* ShadowNudgeManager.swift */,
+				77F8418C2C9648CF005F94FB /* ShadowNudgeAssignment.swift */,
+			);
+			path = ADHDCoach;
+			sourceTree = "<group>";
+		};
+		7779B3FF2C78F84100DD6371 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7779B4002C78F84100DD6371 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		77F7C27E2C909DFF002642BE /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				7779B4112C78FE5100DD6371 /* AddCourseView.swift */,
+				771226F92C79ECF700456452 /* ContactView.swift */,
+				7779B4272C79097200DD6371 /* CourseArchiveView.swift */,
+				7779B4092C78FBD900DD6371 /* CourseDetailView.swift */,
+				7779B4072C78FB8B00DD6371 /* CoursesView.swift */,
+				771C51FE2C7F6FB2006B7D23 /* CoursesViewModel.swift */,
+			);
+			path = Courses;
+			sourceTree = "<group>";
+		};
+		77F7C27F2C909E07002642BE /* Assignments */ = {
+			isa = PBXGroup;
+			children = (
+				771C52002C7F734B006B7D23 /* EditAssignmentView.swift */,
+				7779B40D2C78FC1600DD6371 /* CalendarManager.swift */,
+				7779B4132C78FF4A00DD6371 /* AddAssignmentView.swift */,
+				7779B40B2C78FBF700DD6371 /* AssignmentDetailView.swift */,
+				7728236D2C92365B0071114D /* FeedbackPage.swift */,
+				7779B4192C7903A800DD6371 /* MasterSummaryView.swift */,
+			);
+			path = Assignments;
+			sourceTree = "<group>";
+		};
+		77F7C2802C909E40002642BE /* Global files */ = {
+			isa = PBXGroup;
+			children = (
+				7779B3F92C78F84000DD6371 /* ADHDCoachApp.swift */,
+				775B2BA52C82AC0F00D3C0A1 /* AppSettings.swift */,
+				771C51FA2C7E750A006B7D23 /* Constants.swift */,
+				7779B3FB2C78F84000DD6371 /* ContentView.swift */,
+				77AD60232C7920780082F758 /* DocumentPicker.swift */,
+				77AD60272C7937280082F758 /* FileManagerHelper.swift */,
+				7779B4172C79021400DD6371 /* Models.swift */,
+				77C60CE12C8C8E0900B9FD58 /* MoreView.swift */,
+				773FDD4D2C7CE2EA00A10386 /* OpenAIService.swift */,
+				77AD60292C7937B20082F758 /* PDFViewer.swift */,
+				7779B4152C7900AF00DD6371 /* PersistenceManager.swift */,
+				77EE0E322C8895840019A50D /* Prompts.swift */,
+				77C60CE72C8CF85900B9FD58 /* ResourcesView.swift.swift */,
+				775B2BA72C82AC9500D3C0A1 /* SettingsView.swift */,
+				77BA41602C8E5BF200EFA717 /* ShareSheet.swift */,
+				772823712C9466D30071114D /* DateHelper.swift */,
+			);
+			path = "Global files";
+			sourceTree = "<group>";
+		};
+		77F7C2812C909E87002642BE /* Syllabus */ = {
+			isa = PBXGroup;
+			children = (
+				771C51FC2C7E7C2E006B7D23 /* SyllabusSummaryView.swift */,
+			);
+			path = Syllabus;
+			sourceTree = "<group>";
+		};
+		77F7C2822C909EF0002642BE /* Back Up */ = {
+			isa = PBXGroup;
+			children = (
+				77353BDC2C8D3A1A0004FD1B /* BackupManager.swift */,
+				77353BDA2C8D271F0004FD1B /* BackUpView.swift */,
+			);
+			path = "Back Up";
+			sourceTree = "<group>";
+		};
+		77F7C2832C909F19002642BE /* Panic */ = {
+			isa = PBXGroup;
+			children = (
+				77C60CDF2C8B9D9100B9FD58 /* CrisisLogic.swift */,
+				77C60CDD2C8B9A1800B9FD58 /* CrisisPlanView.swift */,
+				77FDA33D2C8F7477004AA1D9 /* PlanArchiveView.swift */,
+				77C60CE32C8C948300B9FD58 /* PlanDetailView.swift */,
+				77C60CE52C8CA17200B9FD58 /* PlanView.swift */,
+			);
+			path = Panic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7779B3F52C78F84000DD6371 /* KageGuide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7779B4042C78F84100DD6371 /* Build configuration list for PBXNativeTarget "KageGuide" */;
+			buildPhases = (
+				7779B3F22C78F84000DD6371 /* Sources */,
+				7779B3F32C78F84000DD6371 /* Frameworks */,
+				7779B3F42C78F84000DD6371 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KageGuide;
+			packageProductDependencies = (
+				77353BDF2C8D402D0004FD1B /* ZIPFoundation */,
+			);
+			productName = ADHDCoach;
+			productReference = 7779B3F62C78F84000DD6371 /* KageGuide.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7779B3EE2C78F83F00DD6371 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					7779B3F52C78F84000DD6371 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 7779B3F12C78F83F00DD6371 /* Build configuration list for PBXProject "KageGuide" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7779B3ED2C78F83F00DD6371;
+			packageReferences = (
+				77353BDE2C8D402D0004FD1B /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+			);
+			productRefGroup = 7779B3F72C78F84000DD6371 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7779B3F52C78F84000DD6371 /* KageGuide */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7779B3F42C78F84000DD6371 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77FDA3422C8F7FB2004AA1D9 /* Launch Screen.storyboard in Resources */,
+				77FDA3442C8F81D0004AA1D9 /* Title2KageShadow.png in Resources */,
+				7779B4012C78F84100DD6371 /* Preview Assets.xcassets in Resources */,
+				7779B3FE2C78F84100DD6371 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7779B3F22C78F84000DD6371 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7779B4182C79021400DD6371 /* Models.swift in Sources */,
+				77F8418B2C9648A4005F94FB /* ShadowNudgeManager.swift in Sources */,
+				77C60CDE2C8B9A1800B9FD58 /* CrisisPlanView.swift in Sources */,
+				7779B40A2C78FBD900DD6371 /* CourseDetailView.swift in Sources */,
+				7779B4162C7900AF00DD6371 /* PersistenceManager.swift in Sources */,
+				7779B41A2C7903A800DD6371 /* MasterSummaryView.swift in Sources */,
+				7779B3FC2C78F84000DD6371 /* ContentView.swift in Sources */,
+				7779B3FA2C78F84000DD6371 /* ADHDCoachApp.swift in Sources */,
+				7779B4122C78FE5100DD6371 /* AddCourseView.swift in Sources */,
+				77C60CE42C8C948300B9FD58 /* PlanDetailView.swift in Sources */,
+				773FDD4E2C7CE2EA00A10386 /* OpenAIService.swift in Sources */,
+				7779B41C2C7905C300DD6371 /* WelcomeView.swift in Sources */,
+				77AD602A2C7937B20082F758 /* PDFViewer.swift in Sources */,
+				77C60CE02C8B9D9100B9FD58 /* CrisisLogic.swift in Sources */,
+				7779B40E2C78FC1600DD6371 /* CalendarManager.swift in Sources */,
+				77FDA33E2C8F7477004AA1D9 /* PlanArchiveView.swift in Sources */,
+				771C51FB2C7E750A006B7D23 /* Constants.swift in Sources */,
+				771226FA2C79ECF700456452 /* ContactView.swift in Sources */,
+				771C52012C7F734B006B7D23 /* EditAssignmentView.swift in Sources */,
+				77C60CE82C8CF85900B9FD58 /* ResourcesView.swift.swift in Sources */,
+				77AD60282C7937280082F758 /* FileManagerHelper.swift in Sources */,
+				7779B40C2C78FBF700DD6371 /* AssignmentDetailView.swift in Sources */,
+				77AD60222C7920270082F758 /* ImportView.swift in Sources */,
+				77EE0E332C8895840019A50D /* Prompts.swift in Sources */,
+				7779B4142C78FF4A00DD6371 /* AddAssignmentView.swift in Sources */,
+				77C60CE22C8C8E0900B9FD58 /* MoreView.swift in Sources */,
+				772823722C9466D30071114D /* DateHelper.swift in Sources */,
+				77AD60242C7920780082F758 /* DocumentPicker.swift in Sources */,
+				7728236E2C92365B0071114D /* FeedbackPage.swift in Sources */,
+				771C51FD2C7E7C2E006B7D23 /* SyllabusSummaryView.swift in Sources */,
+				77353BDB2C8D271F0004FD1B /* BackUpView.swift in Sources */,
+				7779B4082C78FB8B00DD6371 /* CoursesView.swift in Sources */,
+				77EE0E2B2C8516350019A50D /* AboutView.swift in Sources */,
+				7779B4282C79097200DD6371 /* CourseArchiveView.swift in Sources */,
+				77EC16F62C8A27EC008E2C57 /* DashboardView.swift in Sources */,
+				77BA41612C8E5BF200EFA717 /* ShareSheet.swift in Sources */,
+				77F8418D2C9648CF005F94FB /* ShadowNudgeAssignment.swift in Sources */,
+				77353BDD2C8D3A1A0004FD1B /* BackupManager.swift in Sources */,
+				77C60CE62C8CA17200B9FD58 /* PlanView.swift in Sources */,
+				775B2BA62C82AC0F00D3C0A1 /* AppSettings.swift in Sources */,
+				771C51FF2C7F6FB2006B7D23 /* CoursesViewModel.swift in Sources */,
+				775B2BA82C82AC9500D3C0A1 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7779B4022C78F84100DD6371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7779B4032C78F84100DD6371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7779B4052C78F84100DD6371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.5;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 2SCSZH988Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KageGuide-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = KageGuide;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "This app needs access to your calendar to manage assignments.";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "This app needs access to your reminders to set task reminders.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsic.KageGuide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7779B4062C78F84100DD6371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.5;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 2SCSZH988Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KageGuide-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = KageGuide;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "This app needs access to your calendar to manage assignments.";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "This app needs access to your reminders to set task reminders.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsic.KageGuide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7779B3F12C78F83F00DD6371 /* Build configuration list for PBXProject "KageGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7779B4022C78F84100DD6371 /* Debug */,
+				7779B4032C78F84100DD6371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7779B4042C78F84100DD6371 /* Build configuration list for PBXNativeTarget "KageGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7779B4052C78F84100DD6371 /* Debug */,
+				7779B4062C78F84100DD6371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		77353BDE2C8D402D0004FD1B /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.19;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		77353BDF2C8D402D0004FD1B /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77353BDE2C8D402D0004FD1B /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7779B3EE2C78F83F00DD6371 /* Project object */;
+}
